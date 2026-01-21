@@ -97,13 +97,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginRight="10dp"
             android:text="Address:"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:layout_marginRight="10dp"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/client_address_edit_text"
@@ -144,7 +144,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="City:"
+            android:text="Currency:"
             android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -152,46 +152,22 @@
             android:layout_column="0"
             android:layout_marginRight="10dp"/>
 
-        <EditText
-            android:id="@+id/client_city_edit_text"
+        <Spinner
+            android:id="@+id/currency_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="Bucharest"
-            android:hint="City name"
-            android:textColor="#000000"
-            android:textColorHint="#555555"
+            android:entries="@array/currency"
+            android:spinnerMode="dropdown"
             android:layout_row="3"
             android:layout_column="1"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Info Type:"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_row="4"
-            android:layout_column="0"
-            android:layout_marginRight="10dp"/>
 
-        <EditText
-            android:id="@+id/client_information_type_edit_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="all"
-            android:hint="all / temperature"
-            android:textColor="#000000"
-            android:textColorHint="#555555"
-            android:layout_row="4"
-            android:layout_column="1"/>
 
         <Button
-            android:id="@+id/client_get_weather_button"
+            android:id="@+id/client_get_currency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get Weather"
+            android:text="Get Currency"
             android:backgroundTint="#4CAF50"
             android:textColor="#FFFFFF"
             android:layout_row="5"

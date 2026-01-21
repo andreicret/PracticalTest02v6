@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PracticalTest02v6</string>
+    <string-array name="currency">
+        <item>BTC-USD</item>
+        <item>BTC-EUR</item>
+    </string-array>
 </resources>
